@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HTML Calculator</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Basic Calculator!</h1>
+            <p>You can add, subtract, multiply,divide and much more. Just give it a try.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Play with me..</a></p>
+        </div>
+        <div class="my-calc-form">
+        <div class="form-horizontal">
+                <fieldset>
+                  <legend>Calculator</legend>
+                  <div class="form-group">
+                    <label for="firstValue" class="col-lg-2 control-label">Value 1</label>
+                    <div class="col-lg-10">
+                      <input type="number" class="form-control" id="firstValue" placeholder="Please enter first value">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                        <label for="secondValue" class="col-lg-2 control-label">Value 2</label>
+                        <div class="col-lg-10">
+                          <input type="number" class="form-control" id="secondValue" placeholder="Please enter second value">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="result" class="col-lg-2 control-label">Your output is: </label>
+                          <div class="col-lg-10">
+                                <input type="button" class="form-control btn-primary" id="result" placeholder="Please enter second value">
+                              </div>
+                      </div>
+                  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <button  class="btn btn-default" onclick="add()">Add</button>
+                      <button  class="btn btn-primary" onclick="subtract()">Subtract</button>
+                      <button  class="btn btn-danger" onclick="multiply()">Multiply</button>
+                      <button  class="btn btn-warning" onclick="divide()">Divide</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/Calculator.js"></script>
+</body>
+
+</html>
